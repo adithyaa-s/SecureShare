@@ -2,7 +2,7 @@
 
 SecureShare is a secure file sharing system that ensures end-to-end encryption, robust user authentication, and secure file transfers. It utilizes modern cryptography and security protocols to protect sensitive data.
 
-![SecureShare Screenshot](/placeholder.svg?height=400&width=800)
+![SecureShare Screenshot](/frontend/public/placeholder-logo.png)
 
 ## Features
 
