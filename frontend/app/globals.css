@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 0% 80%;
+    --destructive-foreground: 0 0% 0%;
+    --border: 0 0% 30%;
+    --input: 0 0% 30%;
+    --ring: 0 0% 70%;
+    --radius: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.retro-bg {
+  background-color: black;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 30px 30px;
+}
+
+.retro-card {
+  border: 2px solid white;
+  box-shadow: 4px 4px 0 white;
+}
+
+.retro-button {
+  border: 2px solid white;
+  transition: all 0.1s ease;
+}
+
+.retro-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 white;
+}
+
+.retro-button:active {
+  transform: translate(0, 0);
+  box-shadow: none;
+}
+
+.retro-input {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+
+.retro-input:focus {
+  outline: none;
+  box-shadow: 4px 4px 0 white;
+}
+
+.retro-header {
+  border-bottom: 2px solid white;
+}
+
+.retro-footer {
+  border-top: 2px solid white;
+}
+
+.file-upload-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.welcome-animation {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.share-animation {
+  animation: shareAnim 0.5s ease-out;
+}
+
+@keyframes shareAnim {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
